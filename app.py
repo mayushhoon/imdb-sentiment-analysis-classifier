@@ -78,7 +78,7 @@ if st.button("Analyze Sentiment"):
 
         # Display result
         if prediction[0] == 1:
-            st.success("Sentiment: Positive")
+            st.success(f"Sentiment: Positive ")
         else:
             st.error("Sentiment: Negative")
     else:
