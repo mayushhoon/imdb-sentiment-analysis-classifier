@@ -44,7 +44,13 @@ def load_resources():
     with open('tfidf_vectorizer.pkl', 'rb') as vectorizer_file:
         vectorizer = pickle.load(vectorizer_file)
     return model, vectorizer
+    
+def identity_preprocessor(text):
+    return text
 
+def identity_tokenizer(text):
+    return text
+    
 model, tfidf_vectorizer = load_resources()
 
 st.title("IMDB Movie Review Sentiment Analyzer")
