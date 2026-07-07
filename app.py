@@ -9,15 +9,16 @@ from nltk.tokenize import word_tokenize
 # Download NLTK data if not already present (for Streamlit deployment)
 try:
     nltk.data.find('corpora/stopwords')
-except nltk.downloader.DownloadError:
+except LookupError:
     nltk.download('stopwords')
 try:
     nltk.data.find('tokenizers/punkt')
-except nltk.downloader.DownloadError:
+except LookupError:
     nltk.download('punkt')
+
 try:
     nltk.data.find('tokenizers/punkt_tab')
-except nltk.downloader.DownloadError:
+except LookupError:
     nltk.download('punkt_tab')
 
 stop_words = set(stopwords.words('english'))
