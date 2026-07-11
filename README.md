@@ -36,7 +36,7 @@ To run this project on your local machine, follow these steps:
 2.  **Create a virtual environment (recommended)**:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    source venv/Scripts/activate  # On PowerShell, use `venv\Scripts\activate`
     ```
 
 3.  **Install dependencies**:
