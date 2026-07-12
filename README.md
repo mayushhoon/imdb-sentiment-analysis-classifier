@@ -29,7 +29,7 @@ To run this project on your local machine, follow these steps:
 
 1.  **Clone the repository**:
     ```bash
-    git clone <your-repository-url>
+    git clone <repository-url>
     ```
     ```bash
     cd imdb-sentiment-analysis-classifier
