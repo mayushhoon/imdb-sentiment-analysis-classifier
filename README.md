@@ -30,21 +30,38 @@ To run this project on your local machine, follow these steps:
 1.  **Clone the repository**:
     ```bash
     git clone <your-repository-url>
-    cd imdb-sentiment-analysis
+    ```
+    ```bash
+    cd imdb-sentiment-analysis-classifier
     ```
 
 2.  **Create a virtual environment (recommended)**:
     ```bash
     python -m venv venv
-    source venv/Scripts/activate  # On PowerShell, use `venv\Scripts\activate`
+    ```
+    ```bash
+    # On MacOS/Linux
+    source venv/Scripts/activate
+    ```
+    ```bash
+    # On Windows
+    venv\Scripts\activate
     ```
 
-3.  **Install dependencies**:
+4.  **Install dependencies**:
+
+    The `requirements.txt` file contains:
+    ```bash
+    streamlit
+    pandas
+    scikit-learn
+    nltk
+    ```
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Download NLTK data (if not already present)**:
+5.  **Download NLTK data (if not already present)**:
     The `app.py` script attempts to download necessary NLTK data. If you encounter issues, you might need to manually download them:
     ```python
     import nltk
@@ -53,7 +70,7 @@ To run this project on your local machine, follow these steps:
     nltk.download('punkt_tab')
     ```
 
-5.  **Run the Streamlit application**:
+6.  **Run the Streamlit application**:
     ```bash
     streamlit run app.py
     ```
